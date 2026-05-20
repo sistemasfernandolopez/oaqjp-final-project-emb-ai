@@ -34,9 +34,9 @@ def emo_detector():
     sadness = response['sadness']
     dominant_emotion = response['dominant_emotion']
 
-    # Validar entrada inválida
+    # Manejo de error para entrada inválida
     if dominant_emotion is None:
-        return "Invalid text! Please try again."
+        return "¡Texto inválido! ¡Por favor, intenta de nuevo!"
 
     # Retornar respuesta formateada
     return f"For the given statement, the system response is " \
